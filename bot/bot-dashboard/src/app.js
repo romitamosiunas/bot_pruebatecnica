@@ -1,8 +1,8 @@
 import React from 'react';
-import Weather from './components/Weather';
+import Weather from './components/weather';
 import './css/App.css';
 
-const App = () => {
+const app = () => {
     return (
         <div>
             <h1>DeltoBot Dashboard</h1>
@@ -11,6 +11,6 @@ const App = () => {
     );
 };
 
-export default App;
+export default app;
 
 

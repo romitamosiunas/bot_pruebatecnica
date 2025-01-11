@@ -6,7 +6,7 @@ const Weather = () => {
     const [weather, setWeather] = useState(null);
 
     const fetchWeather = async () => {
-        console.log('fetchWeather called');
+        console.log('fetchweather called');
         console.log('City:', city);
         console.log('API Key:', process.env.REACT_APP_OPENWEATHER_API_KEY); // Verificar que la clave API se esté cargando
 
