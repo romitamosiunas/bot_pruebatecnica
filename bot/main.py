@@ -104,10 +104,9 @@ def main() -> None:
     )
     application.add_handler(conv_handler)
 
-    #Analizar comentario
+
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, analyze_comment))
 
-    # Iniciar el bot con polling
     application.run_polling()
 
 if __name__ == '__main__':
