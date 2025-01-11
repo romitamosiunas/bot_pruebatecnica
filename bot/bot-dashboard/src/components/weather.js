@@ -8,9 +8,10 @@ const Weather = () => {
     const fetchWeather = async () => {
         console.log('fetchWeather called');
         console.log('City:', city);
+        console.log('API Key:', process.env.REACT_APP_OPENWEATHER_API_KEY); // Verificar que la clave API se esté cargando
 
         try {
-            const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=697ca98f2f789619c6573d094204b659&units=metric&lang=es`);
+            const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}&units=metric&lang=es`);
             console.log('API Response:', response.data);
             setWeather(response.data);
         } catch (error) {
@@ -38,4 +39,5 @@ const Weather = () => {
 };
 
 export default Weather;
+
 
