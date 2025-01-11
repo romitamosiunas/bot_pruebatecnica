@@ -1,4 +1,5 @@
 python-telegram-bot==21.10
+python-dotenv
 requests
 openai
-python-dotenv
+pickledb
